@@ -9,6 +9,7 @@ pipeline {
         
         stage ('Static Scan'){
             steps {
+                sh 'chmod 777'
                 sh './script.sh'
             }
         }
